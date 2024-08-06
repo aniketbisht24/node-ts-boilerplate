@@ -10,40 +10,7 @@
         "name": "Launch Program",
         "program": "${workspaceFolder}/server/server.js",
         "env": {
-        //   "DB_NAME":"gold_loan",
-
-        //   "DB_USER_NAME":"postgres",
-
-        //   "DB_PASSWORD":"password1",
-
-        //   "DB_HOST": "dev.cpxn3s483ymd.ap-south-1.rds.amazonaws.com",
-
-          // "DB_HOST": "development.cpxn3s483ymd.ap-south-1.rds.amazonaws.com"
-        }
-      },
-      {
-        "type": "node",
-        "request": "launch",
-        "name": "Mocha All",
-        "program": "${workspaceFolder}/server/node_modules/mocha/bin/_mocha",
-        "args": [
-          "--timeout",
-          "999999",
-          "--colors",
-           "${workspaceFolder}/server/test/graphql/mutation/order/cancel.js"
-        //  "${workspaceFolder}/server/test/services/order/get-by-public-id.js"
-
-        ],
-        "console": "integratedTerminal",
-        "internalConsoleOptions": "neverOpen",
-        "env": {
-          "DB_NAME":"gold_loan",
-
-          "DB_USER_NAME":"postgres",
-
-          "DB_PASSWORD":"password1",
-
-          "DB_HOST": "dev.cpxn3s483ymd.ap-south-1.rds.amazonaws.com",
+          "NODE_ENV":"development",
         }
       },
     ]
